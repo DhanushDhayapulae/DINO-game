@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINO Run - Minimal Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">DINO RUN</h1>
+            <div class="score-container">
+                <span class="score-label">SCORE</span>
+                <span class="score" id="score">00000</span>
+                <span class="high-score-label">HI</span>
+                <span class="high-score" id="highScore">00000</span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div class="game-controls">
+            <div class="control-hint" id="controlHint">
+                <span>Press SPACE or ↑ to jump, click to start</span>
+            </div>
+            <div class="game-over" id="gameOver" style="display: none;">
+                <h2>GAME OVER</h2>
+                <p>Press SPACE, ↑ or click to restart</p>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span class="icon">🦕</span>
+                <span>SPACE/↑ to jump</span>
+            </div>
+            <div class="info-item">
+                <span class="icon">🌵</span>
+                <span>Jump over cacti</span>
+            </div>
+            <div class="info-item">
+                <span class="icon">🦅</span>
+                <span>↓ to duck under birds</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
